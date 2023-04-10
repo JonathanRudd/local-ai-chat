@@ -1,9 +1,6 @@
 require 'openai'
 require 'env'
 
-
-
-
 def fetch_gpt(message)
   client = OpenAI::Client.new(access_token: gpt_auth)
   response = client.chat(
